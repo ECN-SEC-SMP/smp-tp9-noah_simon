@@ -1,5 +1,15 @@
-#ifndef Q1_VECTEUR_STRING_H
-#define Q1_VECTEUR_STRING_H
+#pragma once
+
+#include <vector>
+#include <iostream>
+
+using namespace std;
 
 
-#endif
+//Prototype:
+void Q2_vecteur_string();
+
+    
+
+
+ 
