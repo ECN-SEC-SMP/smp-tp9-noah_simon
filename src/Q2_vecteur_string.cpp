@@ -1,5 +1,7 @@
 #include "Q2_vecteur_string.h"
 #include <algorithm>
+#include <vector>
+#include <iostream>
 
 
 //focntion qui affiche
@@ -17,6 +19,27 @@ string concatene(const vector<string> &vs){
     }
     return a ;
 }
+
+
+void ajoute_virgule(vector<string>* vs){
+    for_each(vs->begin(), vs->end(), [](string &s) {
+        s+=",";  
+    });
+    // vs devient s et pour chaque valeur de vs on rajoute un , au texte déjà présent.
+}
+
+//Même chose mais avec un foncteur
+class Ajoute_virgule
+{
+public:
+    void operator()(vector<string>* vs)
+    {
+        for_each(vs->begin(), vs->end(), [](string &s) {
+            s+=",";  
+        });
+    }
+};
+
 
 void Q2_vecteur_string(){
     vector<string> vecteurString = {"Bonjour","comment","allez","vous","?"};
@@ -75,9 +98,19 @@ void Q2_vecteur_string(){
     sort(vecteurString.begin(), vecteurString.end());
     afficher_vector_string(vecteurString);
 
-    cout << concatene(vecteurString);
 
+    //concatene
+    cout << concatene(vecteurString) << endl;
 
+    vector<string> vecteurString_copy = vecteurString;
+
+    ajoute_virgule(&vecteurString);
+    afficher_vector_string(vecteurString);
+
+    //Foncteur :
+    Ajoute_virgule add_comma;
+    add_comma(&vecteurString_copy);
+    afficher_vector_string(vecteurString);
 }
 
 
