@@ -1,4 +1,6 @@
-#include <Q1_VECTEUR_ENTIER_H.h>
+#include "Q1_vecteur_entier.h"
+#include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -51,4 +53,6 @@ int fonction_vecteur_entier(){
         cout << "valeur:" << i << endl;
     }
 
+
+    return 0;
 }

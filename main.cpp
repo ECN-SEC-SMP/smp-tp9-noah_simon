@@ -1,10 +1,13 @@
-#include <iostream>
+#include "Q1_vecteur_entier.h"  
 #include "Q2_vecteur_string.h"
 #include "Q3_liste.h"
 #include "Q4_map.h"
 
-int main() {
+#include <iostream>
 
+int main() {
+    cout << "Q1------------------------" << endl;
+    fonction_vecteur_entier();
     cout << "Q2------------------------" << endl;
     Q2_vecteur_string();
     cout << "Q3 -----------------------" << endl;
