@@ -3,6 +3,8 @@
 #include <vector>
 #include <iostream>
 
+using namespace std;
+
 
 //focntion qui affiche
 void afficher_vector_string(const vector<string> &vs){
