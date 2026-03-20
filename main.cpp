@@ -2,6 +2,7 @@
 #include "Q2_vecteur_string.h"
 #include "Q3_liste.h"
 #include "Q4_map.h"
+#include "Q5_lire_csv.h"
 
 #include <iostream>
 
@@ -14,6 +15,8 @@ int main() {
     Q3_liste();
     cout << "Q4 -----------------------" << endl;
     Q4_map();
+    cout << "Q5 -----------------------" << endl;
+    Q5_csv();
     
     return 0;
 }

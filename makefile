@@ -13,7 +13,7 @@ EXEC_MKDIR_BUILD = folder_build
 OBJ_DIR   = ./build
 
 #fichier nécessaire au 2
-OBJS_BOTH = $(OBJ_DIR)/Q1_vecteur_entier.o $(OBJ_DIR)/Q2_vecteur_string.o $(OBJ_DIR)/Q3_liste.o $(OBJ_DIR)/Q4_map.o 
+OBJS_BOTH = $(OBJ_DIR)/Q1_vecteur_entier.o $(OBJ_DIR)/Q2_vecteur_string.o $(OBJ_DIR)/Q3_liste.o $(OBJ_DIR)/Q4_map.o  $(OBJ_DIR)/Q5_lire_csv.o
 
 
 #fichier néssesaire au main
